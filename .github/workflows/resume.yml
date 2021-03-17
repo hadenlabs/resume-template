@@ -1,0 +1,26 @@
+name: build and deploy resume
+
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  resume:
+    runs-on: Ubuntu-20.04
+    container:
+      image: hadenlabs/xelatex:18.04
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: build resume
+        run: |
+          xelatex -output-directory=./ resume.tex -file-line-error -interaction=nonstopmode
+      - name: commit resume pdf
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "ci: generate resume"
+          branch: develop
+          commit_options: '--no-verify --signoff'
+          commit_user_name: "@slovacus"
+          commit_user_email: "slovacus@gmail.com"
+          commit_author: "slovacus <slovacus@gmail.com>"
