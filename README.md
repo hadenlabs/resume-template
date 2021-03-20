@@ -12,17 +12,13 @@
 
   -->
 
-# resume
+# resume-template
 
 [![Lint](https://github.com/hadenlabs/resume-template/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/resume-template/actions) [![Build](https://github.com/hadenlabs/resume-template/actions/workflows/resume.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/resume-template/actions) [![License](https://img.shields.io/github/license/hadenlabs/resume-template.svg)](https://github.com/hadenlabs/resume-template) [![Issues](https://img.shields.io/github/issues/hadenlabs/resume-template.svg)](https://github.com/hadenlabs/resume-template) [![Latest Release](https://img.shields.io/github/release/hadenlabs/resume-template.svg)](https://github.com/hadenlabs/resume-template/releases)
 
 An elegant [LaTeX](https://www.latex-project.org/) resume template, compiled with [XeLaTeX](https://www.overleaf.com/learn/latex/XeLaTeX)
 
-## :page_facing_up: License
-
-resume is an open-sourced software licensed under the [MIT license](LICENSE.md).
-
-## :sparkles: Features
+## Features
 
 - Easy to be further customized or extended
 - Full support for unicode characters
@@ -43,7 +39,7 @@ This is a list of applications that need to be installed previously to enjoy all
 
 ```
 
-## :blue_book: References
+## References
 
 For additional context, refer to some of these links.
 
@@ -61,7 +57,7 @@ File a GitHub [issue](https://github.com/hadenlabs/resume-template/issues), send
 
 Please use the [issue tracker](https://github.com/hadenlabs/resume-template/issues) to report any bugs or file feature requests.
 
-### Developing
+### Development
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -85,6 +81,10 @@ Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
 
 All other trademarks referenced herein are the property of their respective owners.
 
-## Don't forget to 🌟 Star 🌟 the repo if you like resume
+## License
+
+The code and styles are licensed under the MIT license [See project license.](LICENSE).
+
+## Don't forget to 🌟 Star 🌟 the repo if you like resume-template
 
 [Your feedback is appreciated](https://github.com/hadenlabs/resume-template/issues)
