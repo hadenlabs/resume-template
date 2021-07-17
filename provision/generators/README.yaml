@@ -14,28 +14,25 @@ email:
 #logo: docs/logo.png
 
 # License of this project
-license: 'MIT'
+license: 'LGPL-3.0'
 
 # Canonical GitHub repo
 github_repo: hadenlabs/resume-template
 
 # Badges to display
 badges:
+  - name: GitHub release
+    image: https://img.shields.io/github/release/hadenlabs/resume-template?style=flat-square
+    url: https://github.com/hadenlabs/resume-template/releases/latest
   - name: Lint
-    image: https://github.com/hadenlabs/resume-template/actions/workflows/lint.yml/badge.svg?branch=develop
-    url: https://github.com/hadenlabs/resume-template/actions
-  - name: Build
-    image: https://github.com/hadenlabs/resume-template/actions/workflows/resume.yml/badge.svg?branch=develop
-    url: https://github.com/hadenlabs/resume-template/actions
-  - name: License
-    image: https://img.shields.io/github/license/hadenlabs/resume-template.svg
-    url: https://github.com/hadenlabs/resume-template
-  - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/resume-template.svg
-    url: https://github.com/hadenlabs/resume-template
-  - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/resume-template.svg
-    url: https://github.com/hadenlabs/resume-template/releases
+    image: https://img.shields.io/github/workflow/status/hadenlabs/resume-template/lint-code
+    url: https://github.com/hadenlabs/resume-template/actions?workflow=lint-code
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
 
 # Short description of this project
 description: |-
