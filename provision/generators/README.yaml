@@ -49,7 +49,6 @@ references:
     url: 'https://github.com/billryan/resume'
     description: 'Inspiration'
 
-
 requirements: |-
 
   This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
