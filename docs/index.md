@@ -1,1 +1,1 @@
-# Welcome to resume documentation
+# Welcome to resume-template documentation
