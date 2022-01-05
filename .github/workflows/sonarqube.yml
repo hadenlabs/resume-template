@@ -1,4 +1,4 @@
-name: create-resume
+name: sonarqube
 
 on:
   workflow_run:
@@ -6,6 +6,11 @@ on:
       - lint-code
     types:
       - completed
+
+  pull_request:
+    branches:
+      - develop
+      - main
 
   push:
     branches:
@@ -19,9 +24,14 @@ on:
       # prerelease tags, more or less
       - 'v[0-9]+.[0-9]+.[0-9]+-*'
 
+env:
+  SONAR_HOST_URL: '${{ secrets.SONAR_HOST_URL }}'
+  SONAR_LOGIN: '${{ secrets.SONAR_LOGIN }}'
+
 jobs:
-  resume:
+  sonar-scan:
     runs-on: ubuntu-20.04
+
     steps:
       - name: Check out a copy of the repo
         if: ${{ !env.ACT }}
@@ -32,15 +42,6 @@ jobs:
       - name: Install Task
         uses: arduino/setup-task@v1
 
-      - name: Make Resume
-        run: task xelatex:resume
-
-      - name: Commit resume pdf
+      - name: Scan Sonar
         if: ${{ !env.ACT }}
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'ci: generate resume'
-          commit_options: '--no-verify --signoff'
-          commit_user_name: '@slovacus'
-          commit_user_email: 'slovacus@gmail.com'
-          commit_author: 'slovacus <slovacus@gmail.com>'
+        run: task sonar:scan
