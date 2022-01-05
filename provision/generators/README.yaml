@@ -10,6 +10,10 @@ name: resume-template
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: ResumeTemplate
+  title: Project
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -21,18 +25,18 @@ github_repo: hadenlabs/resume-template
 
 # Badges to display
 badges:
-  - name: GitHub release
-    image: https://img.shields.io/github/release/hadenlabs/resume-template?style=flat-square
-    url: https://github.com/hadenlabs/resume-template/releases/latest
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/resume-template
+    url: https://github.com/hadenlabs/resume-template/releases
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/resume-template/lint-code
     url: https://github.com/hadenlabs/resume-template/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
-  - name: KeepAChangelog
-    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
-    url: https://keepachangelog.com
 
 # Short description of this project
 description: |-
@@ -40,9 +44,9 @@ description: |-
 
 # Bulleted features to display
 features:
-  - "Easy to be further customized or extended"
-  - "Full support for unicode characters"
-  - "FontAwesome 5 support"
+  - 'Easy to be further customized or extended'
+  - 'Full support for unicode characters'
+  - 'FontAwesome 5 support'
 
 references:
   - name: 'billryan resume'
@@ -51,15 +55,21 @@ references:
 
 requirements: |-
 
-  This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
+  This is a list of applications that need to be installed previously
+  to enjoy all the goodies of this configuration:
 
   - [Pyenv](https://github.com/pyenv/pyenv)
   - [Docker](https://www.docker.com/)
 
 # How to use this project
 usage: |-
+  ### replace name
+
   ```bash
+  agr 'hadenlabs/resume-template' 'owner/resume'
+  agr 'ResumeTemplate' 'Resume'
+  ```
 
-    make xelatex.resume
-
+  ```bash
+  task xelatex.resume
   ```
