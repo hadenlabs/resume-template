@@ -28,7 +28,9 @@ An elegant [LaTeX](https://www.latex-project.org/) resume template, compiled wit
 
 This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
 
-- [Pyenv](https://github.com/pyenv/pyenv)
+- [gomplate](https://github.com/hairyhenderson/gomplate)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
 - [Docker](https://www.docker.com/)
 
 ## Usage
@@ -43,7 +45,7 @@ agr 'ResumeTemplate' 'Resume'
 ```
 
 ```bash
-task xelatex.resume
+task resume
 ```
 
 ## References
