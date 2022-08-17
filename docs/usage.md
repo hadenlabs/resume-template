@@ -8,5 +8,5 @@ agr 'ResumeTemplate' 'Resume'
 ```
 
 ```bash
-task xelatex.resume
+task resume
 ```
