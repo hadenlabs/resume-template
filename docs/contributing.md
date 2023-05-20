@@ -9,21 +9,21 @@
 
 # How To Contribute
 
-Contributions to resume are welcome.
+Contributions to resume-template are welcome.
 
 Feel free to use all of the contribution options:
 
-- Contribute to resume repositories on [GitHub](https://github.com/hadenlabs/resume-template). See [Git flow](./contribute/git-flow.md).
+- Contribute to resume-template repositories on [GitHub](https://github.com/hadenlabs/resume-template). See [Git flow](./contribute/github-flow.md).
 
 ## Getting Started
 
 ### Development
 
-In general, MRs are welcome. We follow the typical "fork-and-pull" [Git flow](./contribute/git-flow.md).
+In general, MRs are welcome. We follow the typical "fork-and-pull" [Git flow](./contribute/github-flow.md).
 
 1.  **Fork** the repo on Github
 2.  **Clone** the project to your own machine
-3.  **Commit** changes to your own branch using [Git flow](./contribute/git-flow.md)
+3.  **Commit** changes to your own branch using [Git flow](./contribute/github-flow.md)
 4.  **Push** your work back up to your fork
 
 5.  Submit a **Pull Request** so that we can review your changes
@@ -70,11 +70,11 @@ Examples commit messages:
 
 ### Branches
 
-See [Git flow](./contribute/git-flow.md).
+See [Git flow](./contribute/github-flow.md).
 
 ### Documentation
 
-Documentation is a part of the resume code base. You can find the documentation files in the `doc/` subdirectory of the [main repository](https://github.com/hadenlabs/resume-template). This means that the contribution process is the same for both the source code and documentation.
+Documentation is a part of the resume-template code base. You can find the documentation files in the `doc/` subdirectory of the [main repository](https://github.com/hadenlabs/resume-template). This means that the contribution process is the same for both the source code and documentation.
 
 ### Testing
 
