@@ -11,7 +11,7 @@
 
 ## Bump a new version
 
-Make a new version of resume in the following steps:
+Make a new version of resume-template in the following steps:
 
 ### Generate version major
 
