@@ -2,7 +2,6 @@
 <!-- Parent: Project -->
 <!-- Title: Contributing -->
 <!-- Label: Resume -->
-<!-- Label: Project -->
 <!-- Label: Contributing -->
 <!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
